@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Néolysium-Commande</title>
+    <link rel="stylesheet" href="css/commande-styles.css">
+    <link rel="icon" type="image/svg" href="image/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo-titre">
+            <a class="logo-titre-item" href="index.html"><img src="image/logo.svg" alt="logo du site"></a>
+            <h1 class="logo-titre-item">Néolysium</h1>
+        </div>
+        <ul class="liste">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="commande.html">Commande</a></li>
+        </ul>
+    </nav>
+    <section class="top-page">
+        <div class="landing-page">
+            <h1 class="big-title">Vous pourez commander en remplicent les information en dessous</h1>
+        </div>
+    </section>
+    <section class="commande">
+        <div class="contenaire">
+            <form class="entrer" id="mon-formulaire">
+                <input type="text" id="discord" required></input>
+                <label class="commande-item" for="discord">Votre nom d'utilisateur Discord :</label><br>
+
+                <input type="message" id="message" required></input>
+                <label class="commande-item" for="message">jhofgdhoupgerfq message :</label><br>
+
+                <button class="commande-item" type="submit" onclick="sendMessage()">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <section>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="js/commande.js"></script>
+    </section>
+</body>
+</html>
