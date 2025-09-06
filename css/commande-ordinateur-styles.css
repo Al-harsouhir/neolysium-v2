@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'inter';
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* menue de navigation */
+
+.logo-titre {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo-titre-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-bar img {
+    width: 6vh;
+}
+
+.nav-bar h1 {
+    font-size: 40px;
+    color: white;
+    margin-left: 2em;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    background-color:#ff5555;
+    background-size: cover;
+    height: 5vh;
+    padding: 2%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.liste {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 30em;
+    padding-right: 5em;
+    align-items: center;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+li a:hover {
+    font-size: 2vh;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    color: #ff5555;
+    padding-top: 2vh;
+    padding-bottom: 6vh;
+    padding-left: 1em;
+    padding-right: 1em;
+} 
+
+/* page de bienvenue */
+
+section.top-page {
+    background-size: cover;
+}
+
+.landing-page {
+    margin: 2vh 2em;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.big-title {
+    font-size: 3.5em;
+}
+
+/* Présentation */
+
+.Presentation {
+    margin: 1.5em;
+}
+
+/* commande input */
+
+.commande {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenaire {
+    width: 350px;
+}
+
+/* changement de page */
+
+html {
+    scroll-behavior: smooth;
+}
