@@ -135,6 +135,7 @@ section.top-page {
     position: relative;
     z-index: 2;
     margin: 2px;
+    text-align: center;
 }
 
 .holographic-card::before {

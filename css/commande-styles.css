@@ -157,7 +157,7 @@ section.top-page {
     font-size: 2rem;
     position: relative;
     z-index: 2;
-    justify-content: center;
+    text-align: center;
 }
 
 .holographic-card::before {
