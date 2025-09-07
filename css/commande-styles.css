@@ -121,6 +121,71 @@ section.top-page {
 
 .contenaire {
     width: 350px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.page-lien {
+    color: black;
+    text-decoration: none;
+}
+
+/* carte */
+
+.holographic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holographic-card {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    margin: 2vw;
+}
+
+.holographic-card h2 {
+    color: #ff5555;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+}
+
+.holographic-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        0deg, 
+        transparent, 
+        transparent 30%, 
+        #ff5555
+    );
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.holographic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff5555;
+}
+
+.holographic-card:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
 }
 
 /* changement de page */
