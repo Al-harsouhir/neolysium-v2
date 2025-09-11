@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Néolysium-Commande</title>
-    <link rel="stylesheet" href="css/commande-styles.css">
+    <link rel="stylesheet" href="css/commande-serv-humain-styles.css">
     <link rel="icon" type="image/svg" href="image/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,11 +29,11 @@
     <section class="commande">
         <div class="contenaire">
             <form class="entrer" id="mon-formulaire">
-                <input type="text" id="discord" required></input>
+                <input type="text" id="pseudo" placeholder="Ton pseudo" required><br>
                 <label class="commande-item" for="discord">Votre nom d'utilisateur Discord :</label><br>
 
-                <input type="message" id="message" required></input>
-                <label class="commande-item" for="message">jhofgdhoupgerfq message :</label><br>
+                <input type="text" id="message" placeholder="Ton message" required>
+                <label class="commande-item" for="message">votre message :</label><br>
 
                 <button class="commande-item" type="submit" onclick="sendMessage()">Envoyer</button>
             </form>
