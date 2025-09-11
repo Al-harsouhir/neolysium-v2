@@ -29,18 +29,16 @@
     <section class="commande">
         <div class="contenaire">
             <form class="entrer" id="mon-formulaire">
-                <input type="text" id="pseudo" placeholder="Ton pseudo" required><br>
-                <label class="commande-item" for="discord">Votre nom d'utilisateur Discord :</label><br>
+                <input type="text" id="pseudo" required>
+                <label class="commande-item" for="pseudo">Votre nom d'utilisateur Discord :</label><br>
 
-                <input type="text" id="message" placeholder="Ton message" required>
-                <label class="commande-item" for="message">votre message :</label><br>
+                <input type="text" id="message" required>
+                <label class="commande-item" for="message">Definition de votre serveur en une phrase :</label><br>
 
                 <button class="commande-item" type="submit" onclick="sendMessage()">Envoyer</button>
             </form>
         </div>
     </section>
-    <section>
-        <script src="js/commande-serveur.js"></script>
-    </section>
+    <script src="js/commande-serv-humain.js"></script>
 </body>
 </html>
