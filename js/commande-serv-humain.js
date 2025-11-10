@@ -8,7 +8,7 @@ function Message() {
   const contents = `nouvelle commande :\nPseudo : ${pseudo}\nMessage : ${message}`;
   const request = new XMLHttpRequest();
   request.open("POST", webhook);
-  request.setRequestHeader('Constent-type', 'application/json');
+  request.setRequestHeader('Constent-Type', 'application/json');
 
   const params = {
       content: contents
